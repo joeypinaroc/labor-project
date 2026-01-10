@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import ServicesOverview from "../components/ServicesOverview";
+import ContactBrief from "../components/ContactBrief";
 
 const Home = () => {
     return (
@@ -18,6 +19,7 @@ const Home = () => {
             {/* Portfolio brief*/}
 
             {/* Contact brief*/}
+            <ContactBrief />
 
             <Footer />
 

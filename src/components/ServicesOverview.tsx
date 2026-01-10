@@ -2,7 +2,7 @@
 
 const ServicesOverview = () => {
   return (
-    <section id="services" className="bg-white">
+    <section className="bg-gray-50">
       {/* Serving */}
       <div className="border">
         <span>Proudly serving Orillia and surrounding areas, we deliver dependable workmanship and honest service on every project — big or small.</span>
