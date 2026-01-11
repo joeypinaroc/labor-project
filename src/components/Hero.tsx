@@ -38,7 +38,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className='mx-auto max-w-[1440px] px-6 lg:px-12 pb-16'> 
+        <div className='mx-auto max-w-[1440px] px-6 lg:px-12 py-4'> 
           <div className='grid gap-8 lg:grid-cols-2'>
             {/* Left: Highlights */}
             <div className='grid gap-4'>

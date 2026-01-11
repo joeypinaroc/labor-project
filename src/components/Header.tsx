@@ -42,11 +42,18 @@ const Header = () => {
                 Portfolio
                 <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-gray-900 transition-all duration-300 group-hover:w-full" />
               </Link>
-              <Link
+              {/* <Link
                 to="/about"
                 className="text-gray-700 hover:text-gray-900 transition relative group cursor-pointer"
               >
                   About
+                  <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-gray-900 transition-all duration-300 group-hover:w-full" />
+              </Link> */}
+              <Link
+                to="/contact"
+                className="text-gray-700 hover:text-gray-900 transition relative group cursor-pointer"
+              >
+                  Contact
                   <span className="absolute -bottom-1 left-0 h-[2px] w-0 bg-gray-900 transition-all duration-300 group-hover:w-full" />
               </Link>
             </motion.div>

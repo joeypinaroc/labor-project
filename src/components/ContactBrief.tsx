@@ -1,6 +1,6 @@
 const ContactBrief = () => {
   return (
-    <section className="bg-white">
+    <section>
       <h3>Contact Us</h3>
     </section>
   )

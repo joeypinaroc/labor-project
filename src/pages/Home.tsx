@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import ServicesOverview from "../components/ServicesOverview";
 import ContactBrief from "../components/ContactBrief";
+import PortfolioPreview from "../components/PortfolioPreview";
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
             <ServicesOverview />
 
             {/* Portfolio brief*/}
+            <PortfolioPreview />
 
             {/* Contact brief*/}
             <ContactBrief />

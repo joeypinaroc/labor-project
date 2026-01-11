@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
 import Services from './pages/Services';
+import Contact from './pages/Contact';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
           <Route path='/about' element={<About />}/>
           <Route path='/portfolio' element={<Portfolio />}/>
           <Route path='/services' element={<Services />}/>
+          <Route path='/contact' element={<Contact />}/>
         </Routes>
       </BrowserRouter>
   )
