@@ -23,7 +23,7 @@ const ServicesOverview = () => {
 
   return (
     <section className="bg-gray-50">
-      <div className="mx-auto max-w-[1440px] px-6 lg:px-12 py-14 sm:py:16">
+      <div className="mx-auto max-w-[1440px] px-6 lg:px-12 py-6 sm:py:8">
         {/* Serving */}
         <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
           <p className="text-sm sm:text-base text-gray-700">

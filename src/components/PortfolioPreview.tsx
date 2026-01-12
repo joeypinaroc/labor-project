@@ -13,7 +13,7 @@ const PortfolioPreview = () => {
 
   return (
     <section className="bg-gray-50">
-      <div className="mx-auto max-w-[1440px] px-6 lg:px-12 py-14 sm:py-16">
+      <div className="mx-auto max-w-[1440px] px-6 lg:px-12 py-6 sm:py-8">
         {/* Header */}
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
