@@ -9,7 +9,7 @@ export const servicesList = [
   },
   {
     id: 3,
-    name: "Foundations, walkways, slabs, driveways, and repairs."
+    name: "Renovations & Repairs"
   },
   {
     id: 4,
@@ -21,7 +21,7 @@ export const servicesList = [
   },
   {
     id: 6,
-    name: "Renovations & Repairs"
+    name: "Foundations, walkways, slabs, driveways, and repairs."
   },
   {
     id: 7,
@@ -37,7 +37,7 @@ export const servicesList = [
   },
   {
     id: 10,
-    name: "Exterior Work<"
+    name: "Exterior Work"
   },
   {
     id: 11,
