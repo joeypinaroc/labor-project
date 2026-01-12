@@ -8,7 +8,7 @@ const Hero = () => {
         {/* image frame */}
         <div className="mx-auto max-w-[1440px] px-6 lg:px-12 pt-24">
           <div className="relative overflow-hidden rounded-3xl border border-gray-200 bg-gray-100 shadow-sm">
-            <img src="/placeholder.svg" className='h-[70vh] w-full object-cover'/>
+            <img src="../public/images/hero1.jpg" className='h-[70vh] w-full object-cover'/>
 
             {/* gradient */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent"></div>
@@ -90,7 +90,7 @@ const Hero = () => {
                   <span className='mt-0.5 inline-flex h-6 w-6 items-center justify-center rounded-full border border-gray-200 bg-gray-50'>
                     <Check className='h-4 w-4 text-gray-900' />
                   </span>
-                  <span className='text-sm text-gray-700'>Transparent pricing — no surprises</span>
+                  <span className='text-sm text-gray-700'>Transparent pricing, no surprises</span>
                 </li>
                 <li className='flex items-start gap-3'>
                   <span className='mt-0.5 inline-flex h-6 w-6 items-center justify-center rounded-full border border-gray-200 bg-gray-50'>

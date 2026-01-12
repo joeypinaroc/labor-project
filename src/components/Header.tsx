@@ -14,7 +14,7 @@ const Header = () => {
                 className="w-12 h-12 object-contain "
               />
               <span className="text-lg font-semibold tracking-tight text-gray-900 group-hover:text-gray-700 transition">
-                Company Name
+                Natily Construction & Contracting
               </span>
             </Link>
 

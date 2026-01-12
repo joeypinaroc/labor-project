@@ -6,9 +6,9 @@ const PortfolioPreview = () => {
   const [activeImg, setActiveImg] = useState<string | null>(null);
 
   const images = [
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
+    "../public/images/product-5.jpg",
+    "../public/images/product-6.jpg",
+    "../public/images/product-7.jpg",
   ];
 
   return (
@@ -51,9 +51,9 @@ const PortfolioPreview = () => {
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition"/>
 
               <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between gap-3">
-                <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-gray-900">
+                {/* <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-gray-900">
                   Project {idx + 1}
-                </span>
+                </span> */}
                 <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-gray-900 opacity-0 group-hover:opacity-100 transition">
                   Click to zoom
                 </span>

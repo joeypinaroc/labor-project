@@ -15,10 +15,10 @@ const ServicesOverview = () => {
   }, []);
 
   const serviceImages = [
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
-    "/placeholder.svg",
+    "../public/images/product-1.jpg",
+    "../public/images/process-5.jpg",
+    "../public/images/process-12.jpg",
+    "../public/images/product-4.jpg",
   ];
 
   return (
@@ -27,7 +27,7 @@ const ServicesOverview = () => {
         {/* Serving */}
         <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
           <p className="text-sm sm:text-base text-gray-700">
-            Proudly serving Orillia and surrounding areas, we deliver dependable workmanship and honest service on every project — big or small.
+            Proudly serving Orillia and surrounding areas, we deliver dependable workmanship and honest service on every project, big or small.
           </p>
         </div>
 
