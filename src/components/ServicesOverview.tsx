@@ -15,10 +15,10 @@ const ServicesOverview = () => {
   }, []);
 
   const serviceImages = [
-    "../public/images/product-1.jpg",
-    "../public/images/process-5.jpg",
-    "../public/images/process-12.jpg",
-    "../public/images/product-4.jpg",
+    "/images/product-1.jpg",
+    "/images/process-5.jpg",
+    "/images/process-12.jpg",
+    "/images/product-4.jpg",
   ];
 
   return (

@@ -7,31 +7,31 @@ const Portfolio = () => {
   // Replace with real photos
   const processPhotos = useMemo(
     () => [
-      "../public/images/process-1.jpg",
-      "../public/images/process-2.jpg",
-      "../public/images/process-3.jpg",
-      "../public/images/process-4.jpg",
-      "../public/images/process-5.jpg",
-      "../public/images/process-6.jpg",
-      "../public/images/process-7.jpg",
-      "../public/images/process-8.jpg",
-      "../public/images/process-9.jpg",
-      "../public/images/process-10.jpg",
-      "../public/images/process-11.jpg",
-      "../public/images/process-12.jpg",
+      "/images/process-1.jpg",
+      "/images/process-2.jpg",
+      "/images/process-3.jpg",
+      "/images/process-4.jpg",
+      "/images/process-5.jpg",
+      "/images/process-6.jpg",
+      "/images/process-7.jpg",
+      "/images/process-8.jpg",
+      "/images/process-9.jpg",
+      "/images/process-10.jpg",
+      "/images/process-11.jpg",
+      "/images/process-12.jpg",
     ],
     []
   );
 
   const productPhotos = useMemo(
     () => [
-      "../public/images/product-1.jpg",
-      "../public/images/product-2.jpg",
-      "../public/images/product-3.jpg",
-      "../public/images/product-4.jpg",
-      "../public/images/product-5.jpg",
-      "../public/images/product-6.jpg",
-      "../public/images/product-7.jpg",
+      "/images/product-1.jpg",
+      "/images/product-2.jpg",
+      "/images/product-3.jpg",
+      "/images/product-4.jpg",
+      "/images/product-5.jpg",
+      "/images/product-6.jpg",
+      "/images/product-7.jpg",
     ],
     []
   );

@@ -9,7 +9,7 @@ const Header = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group">
               <img 
-                src="../public/placeholder.svg"
+                src="/placeholder.svg"
                 alt="Company Logo"
                 className="w-12 h-12 object-contain "
               />
