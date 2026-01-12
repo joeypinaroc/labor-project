@@ -14,7 +14,7 @@ const Footer = () => {
           {/* Right: links */}
           <div className="flex items-center gap-6">
             <Link
-              
+              to="/"
               className="text-sm font-medium text-gray-700 hover:text-gray-900 transition"
             >
               Privacy Policy
