@@ -4,7 +4,6 @@ import { Link } from "react-router-dom"
 import { X } from "lucide-react";
 import { servicesList } from "../data/servicesList";
 import { useState } from "react";
-import { s } from "framer-motion/client";
 
 
 const Services = () => {
@@ -42,7 +41,7 @@ const Services = () => {
       <section className="bg-gray-50">
         <div className="mx-auto max-w-[1440px] px-6 lg:px-12 pb-14 sm:pb-16">
           <div className="grid grid-cols-2 gap-1">
-            {servicesList.map((s, index) => (
+            {servicesList.map((s) => (
               <div className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-7 shadow-sm hover:shadow-md transition">
                 <h3 className="text-lg font-semibold text-gray-900">{s.name}</h3>
               </div>
