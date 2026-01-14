@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom"
-import { X } from "lucide-react";
+import { X, Phone } from "lucide-react";
 import { servicesList } from "../data/servicesList";
 import { useState } from "react";
 
@@ -17,33 +17,33 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-black">
       <Header />
 
       {/* Spacer for fixed header */}
-      <div className="h-20" />
+      <div className="h-20 border-x border-white/20"  />
 
       {/* Page header */}
-      <section className="bg-gray-50">
-        <div className="mx-auto max-w-[1440px] px-6 lg:px-12 py-12 sm:py-14">
-          <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900">
+      <section className="bg-black border-x border-white/20">
+        <div className="mx-auto max-w-[1440px] px-6 lg:px-12 py-12 sm:py-14 text-center">
+          <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-white">
             Services
           </h1>
-          <p className="mt-3 max-w-3xl text-sm sm:text-base text-gray-600">
-            From demolition and cleanup to concrete, framing, and finishing —
-            we deliver clean workmanship, safe job sites, and clear communication
+          <p className="mx-auto mt-3 max-w-3xl text-sm sm:text-base text-white">
+            From demolition and cleanup to concrete, framing, and finishing.
+            We deliver clean workmanship, safe job sites, and clear communication
             from start to finish.
           </p>
         </div>
       </section>
 
       {/* Services List */}
-      <section className="bg-gray-50">
+      <section className="bg-black border-x border-white/20">
         <div className="mx-auto max-w-[1440px] px-6 lg:px-12 pb-14 sm:pb-16">
           <div className="grid grid-cols-2 gap-1">
             {servicesList.map((s) => (
-              <div className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-7 shadow-sm hover:shadow-md transition">
-                <h3 className="text-lg font-semibold text-gray-900">{s.name}</h3>
+              <div className="group rounded-2xl border border-gray-200 bg-black p-6 sm:p-7 shadow-sm transition-colors duration-300 ease-out hover:bg-[#ffde59]">
+                <h3 className="text-lg font-semibold text-white transition-colors duration-300 ease-out group-hover:text-black">{s.name}</h3>
               </div>
             ))}
           </div>
@@ -51,24 +51,24 @@ const Services = () => {
       </section>
 
       {/* Portfolio link */}
-      <section className="bg-gray-50">
+      <section className="bg-black border border-white/20">
         <div className="mx-auto max-w-[1440px] px-6 lg:px-12 pb-14 sm:pb-16">
-          <div className="rounded-3xl border border-gray-200 bg-white p-6 sm:p-8 shadow-sm">
+          <div className="rounded-3xl bg-black p-6 sm:p-8 shadow-sm">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
               <div>
-                <h2 className="text-2xl font-semibold tracking-tight text-gray-900">
+                <h2 className="text-3xl font-semibold tracking-tight text-white">
                   See Our Work
                 </h2>
-                <p className="mt-2 text-sm text-gray-600">
-                  Real projects, real results — explore the portfolio for more.
+                <p className="mt-2 text-sm text-gray-500">
+                  Real projects, real results: explore the portfolio for more.
                 </p>
               </div>
 
               <Link
                 to="/portfolio"
-                className="inline-flex items-center justify-center rounded-xl bg-gray-200 px-5 py-3 text-sm font-medium text-white shadow-sm hover:bg-gray-800 active:bg-black transition"
+                className="inline-flex items-center justify-center rounded-xl bg-[#ffde59] px-5 py-3 text-sm font-medium text-white shadow-sm hover:bg-gray-200 active:bg-black transition"
               >
-                View Portfolio
+                <span className="text-black">View Portfolio</span>
               </Link>
             </div>
 
@@ -86,7 +86,7 @@ const Services = () => {
                     className="h-44 w-full object-cover transition duration-300 group-hover:scale-[1.03]"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition" />
-                  <div className="absolute bottom-3 left-3 rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-gray-900 opacity-0 group-hover:opacity-100 transition">
+                  <div className="absolute bottom-3 left-3 rounded-full bg-[#ffde59] px-3 py-1 text-xs font-medium text-gray-900 opacity-0 group-hover:opacity-100 transition">
                     Click to zoom
                   </div>
                 </button>
@@ -97,12 +97,12 @@ const Services = () => {
       </section>
 
       {/* CTA */}
-      <section className="bg-gray-50">
-        <div className="mx-auto max-w-[1440px] px-6 lg:px-12 pb-16">
-          <div className="rounded-3xl border border-gray-200 bg-white p-6 sm:p-10 shadow-sm">
+      <section className="bg-black border-x border-white/20">
+        <div className="mx-auto max-w-[1440px] px-6 lg:px-12 py-5">
+          <div className="rounded-3xl  p-6 sm:p-10 shadow-sm">
             <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
               <div>
-                <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-gray-900">
+                <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-white">
                   Ready to start your project?
                 </h3>
               </div>
@@ -110,16 +110,16 @@ const Services = () => {
               <div className="flex flex-col gap-3 sm:flex-row">
                 <Link
                   to="/contact"
-                  className="inline-flex items-center justify-center rounded-xl bg-gray-200 px-5 py-3 text-sm font-medium text-white shadow-sm hover:bg-gray-800 active:bg-black transition"
+                  className="inline-flex items-center justify-center rounded-xl border border-[#ffde59] bg-[#ffde59] px-5 py-3 text-sm font-medium text-white shadow-sm hover:bg-gray-200 active:bg-black transition"
                 >
-                  Contact Us
+                  <span className="text-black">Contact Us</span>
                 </Link>
 
                 <a
                   href="tel:7051234567"
-                  className="inline-flex items-center justify-center rounded-xl border border-gray-200 bg-gray-200 px-5 py-3 text-sm font-medium text-gray-900 hover:bg-gray-50 transition"
+                  className="inline-flex items-center justify-center rounded-xl border border-[#ffde59] bg-[#ffde59] px-5 py-3 text-sm font-medium text-gray-900 hover:bg-gray-200 transition"
                 >
-                  Call Now
+                  <span className=" inline-flex text-black"><Phone />Call Now</span>
                 </a>
               </div>
             </div>

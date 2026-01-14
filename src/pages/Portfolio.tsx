@@ -4,7 +4,6 @@ import Footer from "../components/Footer";
 import { X } from "lucide-react";
 
 const Portfolio = () => {
-  // Replace with real photos
   const processPhotos = useMemo(
     () => [
       "/images/process-1.jpg",
@@ -42,31 +41,31 @@ const Portfolio = () => {
   const images = activeGroup === "process" ? processPhotos : productPhotos;
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-black">
       <Header />
       {/* spacer for fixed header */}
       <div className="h-20" />
 
       {/* Page header */}
-      <section className="bg-gray-50">
-        <div className="mx-auto max-w-[1440px] px-6 lg:px-12 py-12 sm:py-14">
-          <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-gray-900">
+      <section className="bg-black border border-white/20">
+        <div className="mx-auto max-w-[1440px] px-6 lg:px-12 py-12 sm:py-14 text-center">
+          <h1 className="text-3xl sm:text-4xl font-semibold tracking-tight text-white">
             Portfolio
           </h1>
-          <p className="mt-3 max-w-3xl text-sm sm:text-base text-gray-600">
+          <p className="mx-auto mt-3 max-w-3xl text-sm sm:text-base text-gray-200">
             Proof matters. Here’s a look at how we build, from careful prep and
             clean framing to finished results that hold up and look great.
           </p>
 
           {/* Toggle */}
-          <div className="mt-6 inline-flex rounded-2xl border border-gray-200 bg-white p-1 shadow-sm">
+          <div className="mt-6 inline-flex rounded-2xl border border-white/20 bg-black p-1">
             <button
               type="button"
               onClick={() => setActiveGroup("process")}
-              className={`rounded-xl px-4 py-2 text-sm font-medium transition ${
+              className={`rounded-xl px-5 py-2.5 text-sm font-medium transition-colors duration-300 ease-out ${
                 activeGroup === "process"
-                  ? "bg-gray-900 text-black"
-                  : "text-gray-700 hover:text-gray-900"
+                  ? "bg-[#ffde59] text-black"
+                  : "bg-black text-white hover:bg-gray-200 group-hover:text-black"
               }`}
             >
               The Process
@@ -74,10 +73,10 @@ const Portfolio = () => {
             <button
               type="button"
               onClick={() => setActiveGroup("product")}
-              className={`rounded-xl px-4 py-2 text-sm font-medium transition ${
+              className={`rounded-xl px-5 py-2.5 text-sm font-medium transition-colors duration-300 ease-out ${
                 activeGroup === "product"
-                  ? "bg-gray-900 text-black"
-                  : "text-gray-700 hover:text-gray-900"
+                  ? "bg-[#ffde59] text-black"
+                  : "bg-black text-white hover:bg-gray-200 group-hover:text-black"
               }`}
             >
               The Product
@@ -87,14 +86,14 @@ const Portfolio = () => {
       </section>
 
       {/* Section: The Process */}
-      <section className="bg-gray-50">
+      <section className="pt-5 bg-black border-x border-white/20">
         <div className="mx-auto max-w-[1440px] px-6 lg:px-12 pb-14 sm:pb-16">
           <div className="flex items-end justify-between gap-6">
             <div>
-              <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-gray-900 text-left">
+              <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-white text-left">
                 {activeGroup === "process" ? "The Process" : "The Product"}
               </h2>
-              <p className="mt-2 max-w-3xl text-sm sm:text-base text-gray-600">
+              <p className="mt-2 max-w-3xl text-sm sm:text-base text-gray-500">
                 {activeGroup === "process"
                   ? "In-progress photos that show prep, framing, demolition, and the work behind the finish."
                   : "Finished results: clean lines, solid structure, and attention to detail."}
@@ -102,7 +101,7 @@ const Portfolio = () => {
             </div>
 
             {/* little badge */}
-            <span className="hidden sm:inline-flex rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-gray-900 shadow-sm">
+            <span className="hidden sm:inline-flex rounded-full border border-[#ffde59] bg-[#ffde59] px-4 py-2 text-sm font-medium text-gray-900 shadow-sm">
               {images.length} Photos
             </span>
           </div>

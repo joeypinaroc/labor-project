@@ -1,0 +1,5 @@
+bg: bg-black #000
+text: white
+subtext: text-gray-200
+borders: white/20
+buttons: [#ffde59]

@@ -12,15 +12,15 @@ const PortfolioPreview = () => {
   ];
 
   return (
-    <section className="bg-gray-50">
+    <section className="bg-black border-x border-white/20">
       <div className="mx-auto max-w-[1440px] px-6 lg:px-12 py-6 sm:py-8">
         {/* Header */}
         <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
           <div>
-            <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-gray-900">
+            <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-white text-left">
               Recent Work
             </h2>
-            <p className="mt-2 max-w-2xl text-sm sm:text-base text-gray-600">
+            <p className="mt-2 max-w-2xl text-sm sm:text-base text-gray-200">
               A quick look at real projects.
             </p>
           </div>
@@ -28,9 +28,9 @@ const PortfolioPreview = () => {
           {/* Go to Portfolio */}
           <Link
             to="/portfolio"
-            className="inline-flex items-center justify-center rounded-xl bg-white px-5 py-3 text-sm font-medium text-white shadow-sm hover:bg-gray-200 transition"
+            className="inline-flex items-center justify-center rounded-xl bg-[#ffde59] px-5 py-3 text-sm font-medium text-white shadow-sm hover:bg-gray-50 transition"
           >
-            View Portfolio
+            <span className="text-black">View Portfolio</span>
           </Link>
         </div>
 
@@ -54,7 +54,7 @@ const PortfolioPreview = () => {
                 {/* <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-gray-900">
                   Project {idx + 1}
                 </span> */}
-                <span className="rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-gray-900 opacity-0 group-hover:opacity-100 transition">
+                <span className="rounded-full bg-[#ffde59] px-3 py-1 text-xs font-medium text-gray-900 opacity-0 group-hover:opacity-100 transition">
                   Click to zoom
                 </span>
               </div> 
@@ -63,15 +63,15 @@ const PortfolioPreview = () => {
         </div>
 
         {/* Footer CTA */}
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-          <p className="text-sm text-gray-900">
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between rounded-2xl border border-white/20 bg-black p-6 shadow-sm">
+          <p className="text-lg text-white">
             Want to see more projects like these? Browse the full gallery!
           </p>
           <Link
             to="/portfolio"
-            className="inline-flex items-center justify-center rounded-xl border border-gray-200 bg-white px-5 py-3 text-sm font-medium text-gray-900 hover:bg-gray-50 transition"
+            className="inline-flex items-center justify-center rounded-xl border border-[#ffde59] bg-[#ffde59] px-5 py-3 text-sm font-medium text-black hover:bg-gray-50 transition"
           >
-            Explore Portfolio
+            <span className="text-black">Explore Portfolio</span>
           </Link>
         </div>
       </div>
@@ -91,10 +91,10 @@ const PortfolioPreview = () => {
             <button
               type="button"
               onClick={() => setActiveImg(null)}
-              className="absolute right-3 top-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-gray-900 hover:bg-white transition"
+              className="absolute right-3 top-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 hover:bg-white transition"
               aria-label="Close"
             >
-              <X className="h-5 w-5" />
+              <span className="text-black"><X className="h-5 w-5" /></span>
             </button>
 
             <img 

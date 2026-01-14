@@ -3,53 +3,64 @@ import { Link } from "react-router-dom";
 
 const ContactBrief = () => {
   return (
-    <section className="bg-gray-50">
-      <div className="mx-auto max-w-[1440px] px-6 lg:px-12 py-4 sm:py-6">
+    <section className="bg-black border border-white/20 overflow-x-hidden">
+      <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-12 py-4 sm:py-6">
         <div className="grid gap-8 lg:grid-cols-2">
           {/* Left Contact Details */}
-          <div className="rounded-2xl border border-gray-200 bg-white p-6 sm:p-8 shadow-sm">
-            <h3 className="text-2xl font-semibold tracking-tight text-gray-900">
+          <div className="rounded-2xl border border-white/20 bg-black p-6 sm:p-8 shadow-sm">
+            <h3 className="text-2xl font-semibold tracking-tight text-white">
               Contact Us
             </h3>
 
             <ul className="mt-6 space-y-4">
               <li className="flex items-start gap-4">
-                <span className="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-xl border border-gray-200 bg-gray-50">
+                <span className="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-xl border border-[#ffde59] bg-[#ffde59]">
                   <MapPin className="h-4 w-4 text-gray-900"/>
                 </span>
                 <div>
-                  <p className="text-sm text-left font-medium text-gray-900">Address</p>
-                  <p className="text-sm text-gray-600">84 Diana Drive, Orillia, ON L3V 0E2</p>
+                  <p className="text-sm text-left font-medium text-white">Address</p>
+                  <p className="text-sm text-gray-500 break-words">84 Diana Drive, Orillia, ON L3V 0E2</p>
                 </div>
               </li>
 
               <li className="flex items-start gap-4">
-                <span className="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-xl border border-gray-200 bg-gray-50">
+                <span className="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-xl border border-[#ffde59] bg-[#ffde59]">
                   <Phone className="h-4 w-4 text-gray-900"/>
                 </span>
                 <div>
-                  <p className="text-sm text-left font-medium text-gray-900">Phone</p>
-                  <p className="text-sm text-gray-600">+1 (647) 973 2356</p>
+                  <p className="text-sm text-left font-medium text-white">Phone</p>
+                  <a
+                    href="tel:16479732356"
+                    className="text-sm text-gray-500 hover:text-gray-300 transition break-words"
+                  >
+                    +1 (647) 973 2356
+                  </a>
+                  <p className="text-sm text-gray-500"></p>
                 </div>
               </li>
 
               <li className="flex items-start gap-4">
-                <span className="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-xl border border-gray-200 bg-gray-50">
+                <span className="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-xl border border-[#ffde59] bg-[#ffde59]">
                   <Mail className="h-4 w-4 text-gray-900"/>
                 </span>
                 <div>
-                  <p className="text-sm text-left font-medium text-gray-900">Email</p>
-                  <p className="text-sm text-gray-600">ncalliance@natily.onmicrosoft.com</p>
+                  <p className="text-sm text-left font-medium text-white">Email</p>
+                  <a
+                    href="mailto:ncalliance@natily.onmicrosoft.com"
+                    className="text-sm text-gray-500 hover:text-gray-300 transition break-all"
+                  >
+                    ncalliance@natily.onmicrosoft.com
+                  </a>
                 </div>
               </li>
 
               <li className="flex items-start gap-4">
-                <span className="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-xl border border-gray-200 bg-gray-50">
+                <span className="mt-1 inline-flex h-9 w-9 items-center justify-center rounded-xl border border-[#ffde59] bg-[#ffde59]">
                   <Clock className="h-4 w-4 text-gray-900"/>
                 </span>
                 <div>
-                  <p className="text-sm text-left font-medium text-gray-900">Hours</p>
-                  <p className="text-sm text-gray-600">Monday - Friday: 8:00 AM - 6:00 PM</p>
+                  <p className="text-sm text-left font-medium text-white">Hours</p>
+                  <p className="text-sm text-gray-500 break-words">Monday - Friday: 8:00 AM - 6:00 PM</p>
                 </div>
               </li>
             </ul>
@@ -57,16 +68,16 @@ const ContactBrief = () => {
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link 
                 to="/contact"
-                className="inline-flex items-center justify-center rounded-xl bg-gray-200 px-5 py-3 text-sm font-medium text-white shadow-sm hover:bg-gray-800 active:bg-black transition"
+                className="inline-flex items-center justify-center rounded-xl border border-[#ffde59] bg-[#ffde59] px-5 py-3 text-sm font-medium text-white shadow-sm hover:bg-gray-50 active:bg-black transition"
               >
-                Contact Us
+                <span className="text-black">Contact Us</span>
               </Link>
 
               <a
                 href="tel:6479732356"
-                className="inline-flex items-center justify-center rounded-xl border border-gray-200 bg-gray-200 px-5 py-3 text-sm font-medium text-gray-900 hover:bg-gray-50 transition"
+                className="inline-flex items-center justify-center rounded-xl border border-[#ffde59] bg-[#ffde59] px-5 py-3 text-sm font-medium text-gray-900 hover:bg-gray-50 transition"
               >
-                <Phone />Call Now
+                <span className=" inline-flex text-black"><Phone />Call Now</span>
               </a>
             </div>
           </div>
@@ -74,9 +85,9 @@ const ContactBrief = () => {
           {/* Right: Map */}
           <div className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm">
             <iframe 
-            title="Map"
+              title="Map"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2841.029405411888!2d-79.45902392333215!3d44.59642399091746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d2aaebb5249fd1d%3A0x1d42e64a882b7203!2s84%20Diana%20Dr%2C%20Orillia%2C%20ON%20L3V%200E2!5e0!3m2!1sen!2sca!4v1768176799497!5m2!1sen!2sca" 
-              className="h-full min-h-[320px] w-full border-0"
+              className="w-full border-0 h-[320px] sm:h-[360px] lg:h-full"
               loading="lazy" 
               referrerPolicy="no-referrer-when-downgrade"
             />

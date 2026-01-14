@@ -3,11 +3,11 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-gray-200 bg-white">
+    <footer className="border border-white/20 bg-black">
       <div className="mx-auto max-w-[1440px] px-6 lg:px-12 py-8">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           {/* Left: Copyright */}
-          <span className="text-sm text-gray-600">
+          <span className="text-sm text-gray-500">
             2026 All rights reserved
           </span>
 
@@ -17,7 +17,7 @@ const Footer = () => {
               to="/"
               className="text-sm font-medium text-gray-700 hover:text-gray-900 transition"
             >
-              Privacy Policy
+              <span className="text-gray-500">Privacy Policy</span>
             </Link>
 
             <a
@@ -27,7 +27,7 @@ const Footer = () => {
               className="text-gray-700 hover:text-gray-900 transition"
               aria-label="Facebook"
             >
-              <Facebook className="h-5 w-5"/>
+              <span className="text-[#ffde59]"><Facebook className="h-5 w-5"/></span>
             </a>
 
             <a
@@ -37,7 +37,7 @@ const Footer = () => {
               className="text-gray-700 hover:text-gray-900 transition"
               aria-label="Instagram"
             >
-              <Instagram className="h-5 w-5" />
+              <span className="text-[#ffde59]"><Instagram className="h-5 w-5" /></span>
             </a>
           </div>
         </div>

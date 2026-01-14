@@ -22,11 +22,11 @@ const ServicesOverview = () => {
   ];
 
   return (
-    <section className="bg-gray-50">
+    <section className="bg-black border border-white/20">
       <div className="mx-auto max-w-[1440px] px-6 lg:px-12 py-6 sm:py:8">
         {/* Serving */}
-        <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-          <p className="text-sm sm:text-base text-gray-700">
+        <div className="rounded-2xl border border-white/20 bg-black p-6 shadow-sm">
+          <p className="text-sm sm:text-base text-white">
             Proudly serving Orillia and surrounding areas, we deliver dependable workmanship and honest service on every project, big or small.
           </p>
         </div>
@@ -34,10 +34,10 @@ const ServicesOverview = () => {
         {/* Commitment */}
         <div className="mt-12">
           <div className="text-center">
-            <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-gray-900">
+            <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-white">
               Our Commitment
             </h2>
-            <p className="mt-3 mx-auto max-w-3xl text-sm sm:text-base text-gray-600">
+            <p className="mt-3 mx-auto max-w-3xl text-sm sm:text-base text-gray-300">
               At Natily Construction & Contracting, we’re committed to quality, safety, and customer satisfaction.
               With years of experience in residential and small commercial construction, we handle every phase — from demolition and cleanup to concrete, carpentry, and finishing work.
               We take pride in maintaining clear communication, on-time delivery, and a job site that’s always clean and safe.
@@ -49,17 +49,17 @@ const ServicesOverview = () => {
         <div className="mt-12">
           <div className="flex items-end justify-between gap-6">
             <div>
-              <h3 className="text-xl sm:text-2xl font-semibold tracking-tight text-gray-900">
+              <h3 className="text-2xl sm:text-2xl font-semibold tracking-tight text-white">
                 Our Construction Services
               </h3>
             </div>
 
             <a
               href="/services"
-              className="hidden sm:inline-flex rounded-xl border border-gray-200 bg-white px-4 py-2
+              className="hidden sm:inline-flex rounded-xl border border-[#ffde59] bg-[#ffde59] px-4 py-2
                 text-sm font-medium text-gray-900 hover:bg-gray-50 transition"
             >
-              View all services
+              <span className="text-black">View all services</span>
             </a>
           </div>
 
@@ -69,13 +69,13 @@ const ServicesOverview = () => {
               {topServices.map((service) => (
                 <div
                   key={service.id}
-                  className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow:md transition"
+                  className="rounded-2xl border border-white/20 bg-black p-6 shadow-sm hover:shadow:md transition"
                 >
                   <div className="flex items-start justify-between gap-4">
-                    <h4 className="text-base font-semibold text-gray-900">
+                    <h4 className="text-2xl font-semibold text-white">
                       {service.name}
                     </h4>
-                    <span className="rounded-full border border-gray-200 bg-gray-50 px-3 py-1 text-xs font-medium text-gray-700">
+                    <span className="rounded-full border border-[#ffde59] bg-[#ffde59] px-3 py-1 text-xs font-medium text-black">
                       Service
                     </span>
                   </div>
@@ -90,7 +90,7 @@ const ServicesOverview = () => {
                   key={idx}
                   type="button"
                   onClick={() => setActiveImg(src)}
-                  className="group relative overflow-hidden rounded-2xl border border-gray-200 bg-gray-100 shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-900/10"
+                  className="group relative overflow-hidden rounded-2xl border border-gray-200 bg-gray-500 shadow-sm focus:outline-none focus:ring-2 focus:ring-gray-900/10"
                 >
                   <img 
                     src={src}
@@ -99,7 +99,7 @@ const ServicesOverview = () => {
                   />
                   {/* overlay on hover */}
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition"/>
-                  <div className="absolute bottom-3 left-3 rounded-full bg-white/90 px-3 py-1 text-xs font-medium text-gray-900 opacity-0 group-hover:opacity-100 transition">
+                  <div className="absolute bottom-3 left-3 rounded-full bg-[#ffde59] px-3 py-1 text-xs font-medium text-black opacity-0 group-hover:opacity-100 transition">
                     Click to zoom
                   </div>
                 </button>
@@ -111,7 +111,7 @@ const ServicesOverview = () => {
           <div className="mt-6 sm:hidden">
             <a
               href="/services"
-              className="inline-flex w-full items-center justify-center rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm font-medium text-white hover:bg-gray-200 transition"
+              className="inline-flex w-full items-center justify-center rounded-xl border border-gray-200 bg-[#ffde59] px-4 py-3 text-sm font-medium text-black hover:bg-gray-200 transition"
             >
               View all services
             </a>
@@ -135,10 +135,10 @@ const ServicesOverview = () => {
             <button
               type="button"
               onClick={() => setActiveImg(null)}
-              className="absolute right-3 top-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-gray-900 hover:bg-white transition"
+              className="absolute right-3 top-3 inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#ffde59] text-gray-900 hover:bg-[#ffde59] transition"
               aria-label="Close"
             >
-              <X className="h-5 w-5" />
+              <span className="text-black"><X className="h-5 w-5" /></span>
             </button>
 
             <img 
