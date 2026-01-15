@@ -8,7 +8,7 @@ const Hero = () => {
         {/* image frame */}
         <div className="mx-auto max-w-[1440px] px-4 sm:px-6 lg:px-12 pt-24">
           <div className="relative overflow-hidden rounded-xl border border-white/20 bg-black shadow-sm">
-            <img src="/images/hero1.jpg" className='h-[70vh] w-full object-cover'/>
+            <img src="/images/hero1.jpg" className='h-[40vh] w-full object-cover'/>
 
             {/* gradient */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent"></div>
