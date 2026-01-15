@@ -1,11 +1,14 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { X } from "lucide-react";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const Portfolio = () => {
   const processPhotos = useMemo(
     () => [
+      "/images/process-14.jpg",
+      "/images/process-15.jpg",
+      "/images/process-16.jpg",
       "/images/process-1.jpg",
       "/images/process-2.jpg",
       "/images/process-3.jpg",
@@ -18,12 +21,15 @@ const Portfolio = () => {
       "/images/process-10.jpg",
       "/images/process-11.jpg",
       "/images/process-12.jpg",
+      "/images/process-13.jpg",
     ],
     []
   );
 
   const productPhotos = useMemo(
     () => [
+      "/images/product-11.jpg",
+      "/images/product-12.jpg",
       "/images/product-1.jpg",
       "/images/product-2.jpg",
       "/images/product-3.jpg",
@@ -31,6 +37,10 @@ const Portfolio = () => {
       "/images/product-5.jpg",
       "/images/product-6.jpg",
       "/images/product-7.jpg",
+      "/images/product-8.jpg",
+      "/images/product-9.jpg",
+      "/images/product-10.jpg",
+      
     ],
     []
   );
@@ -39,6 +49,35 @@ const Portfolio = () => {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   const images = activeGroup === "process" ? processPhotos : productPhotos;
+
+  // for image cycling in modal
+  const goNext = () => {
+    setActiveIndex((prev) => {
+      if(prev == null) return prev;
+      return (prev + 1) % images.length;
+    })
+  }
+
+  const goPrev = () => {
+    setActiveIndex((prev) => {
+      if(prev === null) return prev;
+      return (prev - 1 + images.length) % images.length;
+    })
+  }
+
+  useEffect(() => {
+    if(activeIndex === null) return;
+
+    const onKeyDown = (e: KeyboardEvent) => {
+      if(e.key === "Escape") setActiveIndex(null);
+      if(e.key === "ArrowRight") goNext();
+      if(e.key === "ArrowLeft") goPrev();
+    };
+
+    window.addEventListener("keydown", onKeyDown);
+
+    return () => window.removeEventListener("keydown", onKeyDown)
+  }, [activeIndex, images.length]);
 
   return (
     <div className="min-h-screen bg-black">
@@ -144,6 +183,7 @@ const Portfolio = () => {
             className="relative w-full max-w-5xl overflow-hidden rounded-2xl bg-white shadow-xl"
             onClick={(e) => e.stopPropagation()}
           >
+            {/* close modal */}
             <button
               type="button"
               onClick={() => setActiveIndex(null)}
@@ -153,6 +193,25 @@ const Portfolio = () => {
               <X className="h-5 w-5" />
             </button>
 
+            {/* prev img */}
+            <button
+              type="button"
+              onClick={goPrev}
+              className="absolute left-3 top-1/2 z-10 -translate-y-1/2 inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/90 text-gray-900 hover:bg-white transition"
+            >
+              <ChevronLeft className="h-5 w-5"/>
+            </button>
+
+            {/* next */}
+            <button
+              type="button"
+              onClick={goNext}
+              className="absolute right-3 top-1/2 z-10 -translate-y-1/2 inline-flex h-11 w-11 items-center justify-center rounded-full bg-white/90 text-gray-900 hover:bg-white transition"
+            >
+              <ChevronRight className="h-5 w-5"/>
+            </button>
+
+            {/* img box */}
             <img
               src={images[activeIndex]}
               alt="Expanded work"

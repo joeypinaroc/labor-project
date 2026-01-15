@@ -10,10 +10,10 @@ const Services = () => {
   const [activeImg, setActiveImg] = useState<string | null>(null);
 
   const photos = [
-    "/images/process-1.jpg",
-    "/images/process-2.jpg",
+    "/images/product-12.jpg",
+    "/images/process-15.jpg",
     "/images/product-1.jpg",
-    "/images/product-2.jpg",
+    "/images/product-9.jpg",
   ];
 
   return (
