@@ -21,7 +21,7 @@ const Footer = () => {
             </Link>
 
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/profile.php?id=61586036764116&mibextid=wwXIfr&rdid=GpNA6J3zlgHzGEVi&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F171vaY3T49%2F%3Fmibextid%3DwwXIfr#"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-700 hover:text-gray-900 transition"
