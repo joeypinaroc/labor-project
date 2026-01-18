@@ -43,4 +43,8 @@ export const servicesList = [
     id: 11,
     name: "Decks, fences, patios, and siding repair."
   },
+  {
+    id: 12,
+    name: "Waterproofing foundations, and leaky pipes repairs"
+  },
 ]
