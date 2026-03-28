@@ -38,7 +38,7 @@ const ServicesOverview = () => {
               Our Commitment
             </h2>
             <p className="mt-3 mx-auto max-w-3xl text-sm sm:text-base text-gray-300">
-              At Natily Construction & Contracting, we’re committed to quality, safety, and customer satisfaction.
+              At Toti Alliance Inc., we’re committed to quality, safety, and customer satisfaction.
               With years of experience in residential and small commercial construction, we handle every phase — from demolition and cleanup to concrete, carpentry, and finishing work.
               We take pride in maintaining clear communication, on-time delivery, and a job site that’s always clean and safe.
             </p>

@@ -36,9 +36,10 @@ const Header = () => {
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 group">
               <img 
-                src="/images/logo-1.jpg"
+                // src="/images/logo-1.jpg"
+                src="/images/new_logo.jpg"
                 alt="Company Logo"
-                className="w-55 h-30 object-fill "
+                className="w-55 h-30 object-fill rounded-xl"
               />
               {/* <span className="text-lg font-semibold tracking-tight text-white group-hover:text-[#ffde59] transition">
                 Natily Construction & Contracting
