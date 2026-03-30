@@ -33,7 +33,7 @@ const ContactBrief = () => {
                     href="tel:16479732356"
                     className="text-sm text-gray-500 hover:text-gray-300 transition break-words"
                   >
-                    +1 (647) 973 2356
+                    +1 (647) 973 2356 | +1 (289) 259 2208
                   </a>
                   <p className="text-sm text-gray-500"></p>
                 </div>
@@ -49,7 +49,7 @@ const ContactBrief = () => {
                     href="mailto:ncalliance@natily.onmicrosoft.com"
                     className="text-sm text-gray-500 hover:text-gray-300 transition break-all"
                   >
-                    ncalliance@natily.onmicrosoft.com
+                    Totialliance@gmail.com
                   </a>
                 </div>
               </li>
