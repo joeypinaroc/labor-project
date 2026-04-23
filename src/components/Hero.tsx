@@ -19,20 +19,20 @@ const Hero = () => {
             {/* overlay */}
             <div className='absolute inset-x-0 bottom-0 p-4 sm:p-8'>
               <div className='max-w-xl rounded-2xl border border-white/15 bg-white/10 backdrop-blur-md p-4 sm:p-6 text-left shadow-sm'>
-                <p className='text-xs uppercase tracking-widest text-white/80 hover:text-[#ffde59]'>Orillia, Ontario</p>
-                <h1 className='mt-2 text-2xl sm:text-3xl font-semibold tracking-tight text-white hover:text-[#ffde59] transition break-words'>
+                <p className='text-xs uppercase tracking-widest text-black hover:text-[#ffde59]'>Orillia, Ontario</p>
+                <h1 className='mt-2 text-2xl sm:text-3xl font-semibold tracking-tight text-black hover:text-[#ffde59] transition break-words'>
                   Quality Work
                 </h1>
 
                 {/* Highlights */}
                 <div className='mt-4 flex flex-wrap gap-2'>
-                  <span className='rounded-full bg-[#ffde59]/60 px-3 py-1 text-xs sm:text-sm text-white'>
+                  <span className='rounded-full bg-[#ffde59]/60 px-3 py-1 text-xs sm:text-sm text-black'>
                     General Contracting
                   </span>
-                  <span className='rounded-full bg-[#ffde59]/60 px-3 py-1 text-xs sm:text-sm text-white'>
+                  <span className='rounded-full bg-[#ffde59]/60 px-3 py-1 text-xs sm:text-sm text-black'>
                     Demolition & Cleanup
                   </span>
-                  <span className='rounded-full bg-[#ffde59]/60 px-3 py-1 text-xs sm:text-sm text-white'>
+                  <span className='rounded-full bg-[#ffde59]/60 px-3 py-1 text-xs sm:text-sm text-black'>
                     Renovations & Repairs
                   </span>
                 </div>
